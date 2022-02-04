@@ -15,11 +15,6 @@ pub fn greet(name: &str) {
 }
 
 #[wasm_bindgen]
-pub fn test(name: String) -> bool {
-	return name == String::from("LEO");
-}
-
-#[wasm_bindgen]
 pub struct Hangman {
     word_to_guess: String,
     guessed_letters: Vec<char>,

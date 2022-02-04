@@ -1,5 +1,5 @@
 <template>
-	<main class="bg-true-gray-900 h-screen">
+	<main class="h-screen">
 		<div class="pt-8 layout">
 			<div class="flex flex-col">
 				<div class="text-center font-bold text-7xl text-light-50 mb-18">
@@ -11,7 +11,7 @@
 				<div class="flex justify-center" v-if="guessStatus">
 					<h2 class="py-1 px-4 rounded-lg bg-purple-600 text-light-50 text-center font-bold text-4xl tracking-widest select-none shadow-md shadow-true-gray-700">{{ guessStatus.toUpperCase() }}</h2>
 				</div>
-				<div class="flex flex-col justify-center content-center items-center my-16">
+				<div class="flex flex-col justify-center content-center items-center my-16 min-h-16">
 					<p class="text-center font-bold text-2xl text-light-900 text">{{ msg }}</p>
 					<p v-if="word" class="text-center mt-2 text-3xl text-light-900">The word was <em class="not-italic font-bold text-purple-500">{{ word }}</em></p>
 				</div>
