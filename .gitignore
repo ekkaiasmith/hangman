@@ -1,6 +1,5 @@
 node_modules
 .DS_Store
-dist
 dist-ssr
 *.local
 *.lock
@@ -8,5 +7,5 @@ dist-ssr
 # rust
 target/
 Cargo.lock
-pkg/
+hangman/pkg/
 /.rsw
