@@ -93,12 +93,16 @@ impl Hangman {
 						}
 					}
 					self.partial_guess = partial_guess_update;
+					if self.partial_guess == self.word_to_guess {
+						self.game_status = UserStatus::Win;
+						return String::from("You won! 🎉");
+					}
 					return String::from("Well played! This letter is in the word");
 				} else {
 					self.lives -= 1;
 					self.wrong_letters.push(guess);
 					if self.lives <= 0 {
-						return String::from("You are dead!");
+						return String::from("You are dead! 💀 ");
 					} else {
 						return String::from("Missed! This letter is not in the word, you lose a live!");
 					}
@@ -139,6 +143,10 @@ impl Hangman {
 			UserStatus::Dead => false,
 			UserStatus::Win => false,
 		}
+	}
+
+	pub fn is_already_guessed(&self, c: char) -> bool {
+		return self.wrong_letters.contains(&c);
 	}
 
 	pub fn get_guess_status(&self) -> String {
