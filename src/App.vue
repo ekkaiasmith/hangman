@@ -28,7 +28,7 @@
 				</ul>
 				<div class="flex flex-col justify-center content-center items-center my-4 text">
 					<p class="text-center leading-relaxed text-xs text-true-gray-500">Made with ❤️‍🔥 by Ekkaia</p>
-					<p class="text-center leading-relaxed text-xs text-true-gray-500">Created with Rust 🦀, compiled in WebAssembly and powered by Vite ⚡</p>
+					<p class="text-center leading-relaxed text-xs text-true-gray-500">Written with Rust 🦀, compiled in WebAssembly, embedded in Vue 3 and powered by Vite ⚡</p>
 				</div>
 			</div>
 		</div>
