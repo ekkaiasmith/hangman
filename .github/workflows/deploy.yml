@@ -14,8 +14,7 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: '14'
-      - run: yarn
-	  + run: yarn rsw:build # use rsw-node build
+	  - run: yarn rsw:build # use rsw-node build
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
